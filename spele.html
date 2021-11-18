@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/latvija-favicon.ico">
+    <title>Spēle</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+        <nav>
+            <a href="./index.html">Sākums</a>
+            <ul>
+                <a href="./vesture.html">Vēsture</a>
+                <a href="./himna.html">Himna</a>
+                <a href="./spele.html">Spēle</a>
+            </ul>
+        </nav>
+    
+        <div class="wrapper">
+            <div id="game-top">
+                <h1>Spēle, kur vari pārbaudīt savas zināšanas par Latviju</h1>
+            <button id="spele" onclick="startGame()">Sākt</button>
+            </div>
+            
+            <div id="gameBoard">
+                 <!-- Ja tu šo redzi, tad gribēji blēdīties. Īsti latvieši neblēdās, slēdz šo ārā un pildi godīgi!-->
+            <div class="game-text" id="cardOne">
+                <h3>Kurā gadā tika dibināta Latvija?</h3>
+                <div class="answers">
+                    <input type="checkbox" id="correct1">1918</input>
+                    <input type="checkbox">1919</input>
+                    <input type="checkbox">1920</input>
+                    <input type="checkbox">2020</input>
+                </div>
+        </div>
+        <div class="game-text" id="cardOne">
+            <h3>Kurš bija Latvijas 1. prezidents?</h3>
+            <div class="answers">
+                <input type="checkbox">Gustavs Zemgals</input>
+                <input type="checkbox">Raimonds Vējonis</input>
+                <input type="checkbox" id="correct2">Jānis Čakste</input>
+                <input type="checkbox">Samanta Tīna</input>
+            </div>
+    </div>
+    <div class="game-text" id="cardOne">
+        <h3>Cik sievietes ir bijušas par Latvijas prezidenti?</h3>
+        <div class="answers">
+            <input type="checkbox">2</input>
+            <input type="checkbox">4</input>
+            <input type="checkbox">420</input>
+            <input type="checkbox" id="correct3">1</input>
+        </div>
+</div>
+<div class="game-text" id="cardOne">
+    <h3>Pie kuras jūras atrodas Latvija?</h3>
+    <div class="answers">
+        <input type="checkbox">Balto jūras</input>
+        <input type="checkbox">Nāves jūras</input>
+        <input type="checkbox" id="correct4">Baltijas jūras</input>
+        <input type="checkbox">Nevienas</input>
+    </div>
+</div>
+<div class="game-text" id="cardOne">
+<h3>Kura ir Latvijas galvaspilsēta?</h3>
+<div class="answers">
+    <input type="checkbox" id="correct5">Rīga</input>
+    <input type="checkbox">Madona</input>
+    <input type="checkbox">Liepāja</input>
+    <input type="checkbox">Skrunda</input>
+</div>
+</div>
+<button type="submit" id="submit" onclick="submit()">Press me</button>
+            </div>
+           
+           <span id="result"></span>
+        </div>
+        <footer></footer>
+
+
+        <script src="./app.js"></script>
+    </body>
+    </html>
